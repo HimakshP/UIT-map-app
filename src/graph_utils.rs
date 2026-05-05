@@ -1,6 +1,6 @@
 use crate::models::{CampusNode, Connection, Coordinates};
-use petgraph::algo::dijkstra;
-use petgraph::graph::{NodeIndex, UnGraph, node_index};
+use petgraph::algo::astar;
+use petgraph::graph::{NodeIndex, UnGraph};
 use std::collections::HashMap;
 
 pub struct CampusMap {
@@ -100,4 +100,35 @@ pub fn build(nodes: Vec<CampusNode>) -> CampusMap {
     }
 
     CampusMap { graf, index_map }
+}
+
+impl CampusMap {
+    pub fn find_path(&self, start_id: String, end_id: String) -> Option<Vec<CampusNode>> {
+        let st = self.index_map.get(&start_id).copied().unwrap_or(0.into());
+        let end = self.index_map.get(&end_id).copied().unwrap_or(0.into());
+
+        let path = astar(
+            &self.graf,
+            st,
+            |finish| finish == end,
+            |e| *e.weight(),
+            |_| 0.0,
+        );
+
+        if let Some((_total_cost, actual_path_nodes)) = path {
+            // Now 'path' is just the Vec<NodeIndex>
+            let mut path_in_vec = Vec::new();
+
+            for idx in actual_path_nodes {
+                // Now you can index the graph correctly!
+                let node_data = self.graf[idx].clone();
+                path_in_vec.push(node_data);
+            }
+
+            Some(path_in_vec)
+        } else {
+            None // No path was found
+        }
+        // Now you have a Vec<CampusNode> to send to the frontend!
+    }
 }
