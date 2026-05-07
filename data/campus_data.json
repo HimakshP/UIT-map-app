@@ -1,31 +1,798 @@
 [
   {
-    "node_id": "bldg1_f1_entrance",
-    "name": "Building 1 Main Entrance",
-    "node_type": "entrance",
-    "coordinates": { "x": 100.0, "y": 100.0, "floor": 1 },
+    "nodeId": "A_GF_ENTRANCE",
+    "name": "Block A Main Entrance",
+    "nodeType": "entrance",
+    "coordinates": { "x": 50.0, "y": 0.0, "floor": 1 },
     "connections": [
-      { "node_id": "bldg1_f1_stairs", "distance": 15.0 },
-      { "node_id": "outside_quad", "distance": 20.0 }
+      { "nodeId": "A_GF_HALL_SOUTH", "distance": 10.0 }
     ]
   },
   {
-    "node_id": "bldg1_f1_stairs",
-    "name": "Building 1 Stairs (Lobby)",
-    "node_type": "stairs",
-    "coordinates": { "x": 115.0, "y": 100.0, "floor": 1 },
+    "nodeId": "A_GF_HALL_SOUTH",
+    "name": "Ground Floor South Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 50.0, "y": 15.0, "floor": 1 },
     "connections": [
-      { "node_id": "bldg1_f2_stairs", "distance": 50.0 } 
+      { "nodeId": "A_GF_ENTRANCE", "distance": 10.0 },
+      { "nodeId": "A_GF_STAIRS", "distance": 15.0 },
+      { "nodeId": "A_GF_DIRECTOR", "distance": 20.0 },
+      { "nodeId": "A_GF_SCH_CELL", "distance": 15.0 },
+      { "nodeId": "A_GF_FEE_DEPOSIT", "distance": 25.0 },
+      { "nodeId": "A_GF_CS_HOD", "distance": 35.0 },
+      { "nodeId": "A_GF_HALL_WEST", "distance": 30.0 }
     ]
   },
   {
-    "node_id": "bldg1_f2_stairs",
-    "name": "Building 1 Stairs (Floor 2)",
-    "node_type": "stairs",
-    "coordinates": { "x": 115.0, "y": 100.0, "floor": 2 },
+    "nodeId": "A_GF_STAIRS",
+    "name": "Block A Stairs (Ground)",
+    "nodeType": "stairs",
+    "coordinates": { "x": 50.0, "y": 30.0, "floor": 1 },
     "connections": [
-      { "node_id": "bldg1_f1_stairs", "distance": 50.0 },
-      { "node_id": "room_201", "distance": 10.0 }
+      { "nodeId": "A_GF_HALL_SOUTH", "distance": 15.0 },
+      { "nodeId": "A_1F_STAIRS", "distance": 40.0 }
     ]
+  },
+  {
+    "nodeId": "A_GF_DIRECTOR",
+    "name": "Director's Office",
+    "nodeType": "room",
+    "coordinates": { "x": 15.0, "y": 15.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_SOUTH", "distance": 20.0 }]
+  },
+  {
+    "nodeId": "A_GF_SCH_CELL",
+    "name": "Scholarship Cell",
+    "nodeType": "room",
+    "coordinates": { "x": 25.0, "y": 30.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_SOUTH", "distance": 15.0 }]
+  },
+  {
+    "nodeId": "A_GF_FEE_DEPOSIT",
+    "name": "Fee Deposit",
+    "nodeType": "room",
+    "coordinates": { "x": 10.0, "y": 35.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_SOUTH", "distance": 25.0 }]
+  },
+  {
+    "nodeId": "A_GF_CS_HOD",
+    "name": "CS HOD Office",
+    "nodeType": "room",
+    "coordinates": { "x": 85.0, "y": 25.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_SOUTH", "distance": 35.0 }]
+  },
+  {
+    "nodeId": "A_GF_HALL_WEST",
+    "name": "Ground Floor West Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 10.0, "y": 50.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "A_GF_HALL_SOUTH", "distance": 30.0 },
+      { "nodeId": "A_GF_ENG_HOD", "distance": 5.0 },
+      { "nodeId": "A_GF_MATH_HOD", "distance": 15.0 },
+      { "nodeId": "A_GF_TNP", "distance": 25.0 },
+      { "nodeId": "A_GF_FEMALE_WS", "distance": 35.0 },
+      { "nodeId": "A_GF_HALL_NORTH", "distance": 40.0 }
+    ]
+  },
+  {
+    "nodeId": "A_GF_ENG_HOD",
+    "name": "English HOD",
+    "nodeType": "room",
+    "coordinates": { "x": 5.0, "y": 45.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_WEST", "distance": 5.0 }]
+  },
+  {
+    "nodeId": "A_GF_MATH_HOD",
+    "name": "Math HOD",
+    "nodeType": "room",
+    "coordinates": { "x": 5.0, "y": 55.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_WEST", "distance": 15.0 }]
+  },
+  {
+    "nodeId": "A_GF_TNP",
+    "name": "TNP Cell",
+    "nodeType": "room",
+    "coordinates": { "x": 5.0, "y": 65.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_WEST", "distance": 25.0 }]
+  },
+  {
+    "nodeId": "A_GF_FEMALE_WS",
+    "name": "Female Washroom (G)",
+    "nodeType": "room",
+    "coordinates": { "x": 5.0, "y": 80.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_WEST", "distance": 35.0 }]
+  },
+  {
+    "nodeId": "A_GF_HALL_NORTH",
+    "name": "Ground Floor North Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 50.0, "y": 85.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "A_GF_HALL_WEST", "distance": 40.0 },
+      { "nodeId": "A_GF_CS113", "distance": 10.0 },
+      { "nodeId": "A_GF_CS114", "distance": 30.0 },
+      { "nodeId": "A_GF_HALL_EAST", "distance": 40.0 }
+    ]
+  },
+  {
+    "nodeId": "A_GF_CS113",
+    "name": "Classroom CS 113",
+    "nodeType": "room",
+    "coordinates": { "x": 30.0, "y": 90.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_NORTH", "distance": 10.0 }]
+  },
+  {
+    "nodeId": "A_GF_CS114",
+    "name": "Classroom CS 114",
+    "nodeType": "room",
+    "coordinates": { "x": 70.0, "y": 90.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_NORTH", "distance": 30.0 }]
+  },
+  {
+    "nodeId": "A_GF_HALL_EAST",
+    "name": "Ground Floor East Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 90.0, "y": 50.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "A_GF_HALL_NORTH", "distance": 40.0 },
+      { "nodeId": "A_GF_MALE_WS", "distance": 5.0 },
+      { "nodeId": "A_GF_ELEC_LAB", "distance": 15.0 },
+      { "nodeId": "A_GF_ADV_IT_LAB", "distance": 25.0 },
+      { "nodeId": "A_GF_HALL_SOUTH", "distance": 40.0 }
+    ]
+  },
+  {
+    "nodeId": "A_GF_MALE_WS",
+    "name": "Male Washroom (G)",
+    "nodeType": "room",
+    "coordinates": { "x": 95.0, "y": 80.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_EAST", "distance": 5.0 }]
+  },
+  {
+    "nodeId": "A_GF_ELEC_LAB",
+    "name": "Electronics Lab (G)",
+    "nodeType": "room",
+    "coordinates": { "x": 95.0, "y": 65.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_EAST", "distance": 15.0 }]
+  },
+  {
+    "nodeId": "A_GF_ADV_IT_LAB",
+    "name": "Advance IT Lab",
+    "nodeType": "room",
+    "coordinates": { "x": 95.0, "y": 50.0, "floor": 1 },
+    "connections": [{ "nodeId": "A_GF_HALL_EAST", "distance": 25.0 }]
+  },
+  {
+    "nodeId": "A_1F_STAIRS",
+    "name": "Block A Stairs (1st Floor)",
+    "nodeType": "stairs",
+    "coordinates": { "x": 50.0, "y": 30.0, "floor": 2 },
+    "connections": [
+      { "nodeId": "A_GF_STAIRS", "distance": 40.0 },
+      { "nodeId": "A_1F_HALL_MAIN", "distance": 10.0 }
+    ]
+  },
+  {
+    "nodeId": "A_1F_HALL_MAIN",
+    "name": "1st Floor Main Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 50.0, "y": 45.0, "floor": 2 },
+    "connections": [
+      { "nodeId": "A_1F_STAIRS", "distance": 10.0 },
+      { "nodeId": "A_1F_ELEC_LAB", "distance": 35.0 },
+      { "nodeId": "A_1F_MCA_CLASS3", "distance": 45.0 },
+      { "nodeId": "A_1F_MCA_CLASS2", "distance": 50.0 },
+      { "nodeId": "A_1F_MCA_CLASS1", "distance": 40.0 },
+      { "nodeId": "A_1F_LIBRARY", "distance": 40.0 }
+    ]
+  },
+  {
+    "nodeId": "A_1F_ELEC_LAB",
+    "name": "Electronics Lab (1st)",
+    "nodeType": "room",
+    "coordinates": { "x": 10.0, "y": 50.0, "floor": 2 },
+    "connections": [{ "nodeId": "A_1F_HALL_MAIN", "distance": 35.0 }]
+  },
+  {
+    "nodeId": "A_1F_MCA_CLASS3",
+    "name": "MCA Class 3",
+    "nodeType": "room",
+    "coordinates": { "x": 35.0, "y": 85.0, "floor": 2 },
+    "connections": [{ "nodeId": "A_1F_HALL_MAIN", "distance": 45.0 }]
+  },
+  {
+    "nodeId": "A_1F_MCA_CLASS2",
+    "name": "MCA Class 2",
+    "nodeType": "room",
+    "coordinates": { "x": 75.0, "y": 85.0, "floor": 2 },
+    "connections": [{ "nodeId": "A_1F_HALL_MAIN", "distance": 50.0 }]
+  },
+  {
+    "nodeId": "A_1F_MCA_CLASS1",
+    "name": "MCA Class 1",
+    "nodeType": "room",
+    "coordinates": { "x": 90.0, "y": 55.0, "floor": 2 },
+    "connections": [{ "nodeId": "A_1F_HALL_MAIN", "distance": 40.0 }]
+  },
+  {
+    "nodeId": "A_1F_LIBRARY",
+    "name": "Library",
+    "nodeType": "room",
+    "coordinates": { "x": 90.0, "y": 40.0, "floor": 2 },
+    "connections": [{ "nodeId": "A_1F_HALL_MAIN", "distance": 40.0 }]
   }
+
+  ,
+  {
+    "nodeId": "B_GF_ENTRANCE",
+    "name": "Block B Main Entrance",
+    "nodeType": "entrance",
+    "coordinates": { "x": 650.0, "y": 0.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_HALL_SOUTH", "distance": 10.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_STAIRS",
+    "name": "Block B Stairs (Ground)",
+    "nodeType": "stairs",
+    "coordinates": { "x": 650.0, "y": 30.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_HALL_SOUTH", "distance": 15.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_HALL_SOUTH",
+    "name": "Block B South Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 650.0, "y": 15.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_ENTRANCE", "distance": 10.0 },
+      { "nodeId": "B_GF_STAIRS", "distance": 15.0 },
+      { "nodeId": "B_GF_MECH_LAB", "distance": 20.0 },
+      { "nodeId": "B_GF_MATH_HALL", "distance": 40.0 },
+      { "nodeId": "B_GF_CS_LAB_104", "distance": 50.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_MECH_LAB",
+    "name": "Mechanical Lab",
+    "nodeType": "room",
+    "coordinates": { "x": 580.0, "y": 10.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_HALL_SOUTH", "distance": 20.0 },
+      { "nodeId": "B_GF_MECH_STAFF", "distance": 15.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_MECH_STAFF",
+    "name": "Mech Staff Room",
+    "nodeType": "room",
+    "coordinates": { "x": 540.0, "y": 10.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_MECH_LAB", "distance": 15.0 }]
+  },
+  {
+    "nodeId": "B_GF_CS_LAB_104",
+    "name": "CS Lab 104",
+    "nodeType": "room",
+    "coordinates": { "x": 480.0, "y": 10.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_HALL_SOUTH", "distance": 50.0 }]
+  },
+  {
+    "nodeId": "B_GF_MECH_WORKSHOP",
+    "name": "Mech Workshop",
+    "nodeType": "room",
+    "coordinates": { "x": 380.0, "y": 10.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_HALL_WEST", "distance": 30.0 }]
+  },
+  {
+    "nodeId": "B_GF_MATH_HALL",
+    "name": "Math Hall",
+    "nodeType": "room",
+    "coordinates": { "x": 750.0, "y": 10.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_HALL_SOUTH", "distance": 40.0 },
+      { "nodeId": "B_GF_MATH_STAFF", "distance": 10.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_MATH_STAFF",
+    "name": "Math Staff Room",
+    "nodeType": "room",
+    "coordinates": { "x": 750.0, "y": 30.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_MATH_HALL", "distance": 10.0 }]
+  },
+  {
+    "nodeId": "B_GF_HALL_WEST",
+    "name": "Block B West Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 350.0, "y": 50.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_MECH_WORKSHOP", "distance": 30.0 },
+      { "nodeId": "B_GF_ENGG_DRAWING", "distance": 20.0 },
+      { "nodeId": "B_GF_CIVIL_LAB", "distance": 40.0 },
+      { "nodeId": "B_GF_SEMINAR_HALL", "distance": 80.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_ENGG_DRAWING",
+    "name": "Engg Drawing Hall",
+    "nodeType": "room",
+    "coordinates": { "x": 380.0, "y": 40.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_HALL_WEST", "distance": 20.0 }]
+  },
+  {
+    "nodeId": "B_GF_CIVIL_LAB",
+    "name": "Civil Lab",
+    "nodeType": "room",
+    "coordinates": { "x": 380.0, "y": 70.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_HALL_WEST", "distance": 40.0 },
+      { "nodeId": "B_GF_CIVIL_MECH_CLASS", "distance": 10.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_CIVIL_MECH_CLASS",
+    "name": "Civil/Mech Class",
+    "nodeType": "room",
+    "coordinates": { "x": 380.0, "y": 85.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_CIVIL_LAB", "distance": 10.0 }]
+  },
+  {
+    "nodeId": "B_GF_SEMINAR_HALL",
+    "name": "Seminar Hall",
+    "nodeType": "room",
+    "coordinates": { "x": 350.0, "y": 150.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_HALL_WEST", "distance": 80.0 },
+      { "nodeId": "B_GF_IT_HOD", "distance": 10.0 },
+      { "nodeId": "B_GF_MECH_HOD", "distance": 15.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_IT_HOD",
+    "name": "IT HOD Office",
+    "nodeType": "room",
+    "coordinates": { "x": 340.0, "y": 210.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_SEMINAR_HALL", "distance": 10.0 }]
+  },
+  {
+    "nodeId": "B_GF_MECH_HOD",
+    "name": "Mech HOD Office",
+    "nodeType": "room",
+    "coordinates": { "x": 320.0, "y": 210.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_SEMINAR_HALL", "distance": 15.0 }]
+  },
+  {
+    "nodeId": "B_GF_HALL_EAST",
+    "name": "Block B East Hallway",
+    "nodeType": "hallway",
+    "coordinates": { "x": 850.0, "y": 50.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_CHEM_HOD", "distance": 15.0 },
+      { "nodeId": "B_GF_CHEM_LAB", "distance": 25.0 },
+      { "nodeId": "B_GF_PHYS_CS_LAB", "distance": 60.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_CHEM_HOD",
+    "name": "Chem HOD Office",
+    "nodeType": "room",
+    "coordinates": { "x": 820.0, "y": 40.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_HALL_EAST", "distance": 15.0 }]
+  },
+  {
+    "nodeId": "B_GF_CHEM_LAB",
+    "name": "Chem Lab",
+    "nodeType": "room",
+    "coordinates": { "x": 880.0, "y": 50.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_HALL_EAST", "distance": 25.0 }]
+  },
+  {
+    "nodeId": "B_GF_PHYS_CS_LAB",
+    "name": "Physics/CS Lab & HOD",
+    "nodeType": "room",
+    "coordinates": { "x": 880.0, "y": 100.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_HALL_EAST", "distance": 60.0 }]
+  },
+  {
+    "nodeId": "B_GF_WASHROOM_HUB",
+    "name": "Washroom Area",
+    "nodeType": "hallway",
+    "coordinates": { "x": 500.0, "y": 100.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_FEMALE_WS", "distance": 5.0 },
+      { "nodeId": "B_GF_MALE_WS", "distance": 5.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_FEMALE_WS",
+    "name": "Female Washroom",
+    "nodeType": "room",
+    "coordinates": { "x": 480.0, "y": 100.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_WASHROOM_HUB", "distance": 5.0 }]
+  },
+  {
+    "nodeId": "B_GF_MALE_WS",
+    "name": "Male Washroom",
+    "nodeType": "room",
+    "coordinates": { "x": 520.0, "y": 100.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_WASHROOM_HUB", "distance": 5.0 }]
+  },
+  {
+    "nodeId": "B_GF_NORTH_CLASSES_HUB",
+    "name": "North Classroom Cluster",
+    "nodeType": "hallway",
+    "coordinates": { "x": 650.0, "y": 250.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "B_GF_CLASS_1", "distance": 10.0 },
+      { "nodeId": "B_GF_CLASS_2", "distance": 10.0 },
+      { "nodeId": "B_GF_CLASS_3", "distance": 10.0 },
+      { "nodeId": "B_GF_CLASS_4", "distance": 10.0 },
+      { "nodeId": "B_GF_ELECTRONICS_CLASS_1", "distance": 20.0 },
+      { "nodeId": "B_GF_ELECTRONICS_CLASS_2", "distance": 25.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_CLASS_1",
+    "name": "Classroom 1",
+    "nodeType": "room",
+    "coordinates": { "x": 550.0, "y": 270.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_NORTH_CLASSES_HUB", "distance": 10.0 }]
+  },
+  {
+    "nodeId": "B_GF_CLASS_2",
+    "name": "Classroom 2",
+    "nodeType": "room",
+    "coordinates": { "x": 580.0, "y": 270.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_NORTH_CLASSES_HUB", "distance": 10.0 }]
+  },
+  {
+    "nodeId": "B_GF_ELECTRONICS_CLASS_1",
+    "name": "Electronics Class 1",
+    "nodeType": "room",
+    "coordinates": { "x": 750.0, "y": 220.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_NORTH_CLASSES_HUB", "distance": 20.0 }]
+  },
+  {
+    "nodeId": "B_GF_ELECTRONICS_CLASS_2",
+    "name": "Electronics Class 2",
+    "nodeType": "room",
+    "coordinates": { "x": 750.0, "y": 200.0, "floor": 1 },
+    "connections": [{ "nodeId": "B_GF_NORTH_CLASSES_HUB", "distance": 25.0 }]
+  }
+
+
+  ,
+  {
+    "nodeId": "BU_MAIN_GATE",
+    "name": "BU Main Gate (Hoshangabad Rd)",
+    "nodeType": "entrance",
+    "coordinates": { "x": 0.0, "y": 0.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "GATE_AVENUE_HUB", "distance": 100.0 }
+    ]
+  },
+  {
+    "nodeId": "GATE_AVENUE_HUB",
+    "name": "Gate Entrance Hub",
+    "nodeType": "hallway",
+    "coordinates": { "x": 0.0, "y": 100.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "BU_MAIN_GATE", "distance": 100.0 },
+      { "nodeId": "BANK_POST_OFFICE_ZONE", "distance": 50.0 },
+      { "nodeId": "MAIN_SPINE_ROAD_SOUTH", "distance": 200.0 }
+    ]
+  },
+  {
+    "nodeId": "BANK_POST_OFFICE_ZONE",
+    "name": "SBI Bank & Post Office",
+    "nodeType": "room",
+    "coordinates": { "x": 50.0, "y": 100.0, "floor": 1 },
+    "connections": [{ "nodeId": "GATE_AVENUE_HUB", "distance": 50.0 }]
+  },
+  {
+    "nodeId": "MAIN_SPINE_ROAD_SOUTH",
+    "name": "Admin Junction",
+    "nodeType": "hallway",
+    "coordinates": { "x": 0.0, "y": 300.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "GATE_AVENUE_HUB", "distance": 200.0 },
+      { "nodeId": "RAJA_BHOJ_ADMIN", "distance": 70.0 },
+      { "nodeId": "IMS_MANAGEMENT_BLOCK", "distance": 150.0 },
+      { "nodeId": "MAIN_SPINE_ROAD_CENTRAL", "distance": 300.0 }
+    ]
+  },
+  {
+    "nodeId": "RAJA_BHOJ_ADMIN",
+    "name": "Administrative Block (Raja Bhoj Bhavan)",
+    "nodeType": "room",
+    "coordinates": { "x": -70.0, "y": 300.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_SOUTH", "distance": 70.0 }]
+  },
+  {
+    "nodeId": "IMS_MANAGEMENT_BLOCK",
+    "name": "IMS & CRIM Management Dept",
+    "nodeType": "room",
+    "coordinates": { "x": 150.0, "y": 320.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_SOUTH", "distance": 150.0 }]
+  },
+  {
+    "nodeId": "MAIN_SPINE_ROAD_CENTRAL",
+    "name": "Library - UIT Junction",
+    "nodeType": "hallway",
+    "coordinates": { "x": 0.0, "y": 600.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_SOUTH", "distance": 300.0 },
+      { "nodeId": "CENTRAL_LIBRARY", "distance": 80.0 },
+      { "nodeId": "UIT_ENGG_CAMPUS_ENTRY", "distance": 150.0 },
+      { "nodeId": "MAIN_SPINE_ROAD_NORTH", "distance": 400.0 }
+    ]
+  },
+  {
+    "nodeId": "CENTRAL_LIBRARY",
+    "name": "University Central Library",
+    "nodeType": "room",
+    "coordinates": { "x": 80.0, "y": 600.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_CENTRAL", "distance": 80.0 }]
+  },
+  {
+    "nodeId": "UIT_ENGG_CAMPUS_ENTRY",
+    "name": "UIT Engineering College (Phase 1 & 2)",
+    "nodeType": "hallway",
+    "coordinates": { "x": -150.0, "y": 650.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_CENTRAL", "distance": 150.0 },
+      { "nodeId": "A_GF_ENTRANCE", "distance": 40.0 },
+      { "nodeId": "B_GF_ENTRANCE", "distance": 120.0 }
+    ]
+  },
+  {
+    "nodeId": "MAIN_SPINE_ROAD_NORTH",
+    "name": "Academic Departments North",
+    "nodeType": "hallway",
+    "coordinates": { "x": 0.0, "y": 1000.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_CENTRAL", "distance": 400.0 },
+      { "nodeId": "LIFE_SCIENCE_DEPT", "distance": 100.0 },
+      { "nodeId": "PHARMACY_DEPT", "distance": 120.0 },
+      { "nodeId": "PSYCHOLOGY_SOCIAL_SCI", "distance": 150.0 },
+      { "nodeId": "LAW_DEPT", "distance": 180.0 },
+      { "nodeId": "SPORTS_HOSTEL_LINK", "distance": 300.0 }
+    ]
+  },
+  {
+    "nodeId": "LIFE_SCIENCE_DEPT",
+    "name": "Life Science & Bio-Tech Building",
+    "nodeType": "room",
+    "coordinates": { "x": -100.0, "y": 1050.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_NORTH", "distance": 100.0 }]
+  },
+  {
+    "nodeId": "PHARMACY_DEPT",
+    "name": "Pharmacy Department",
+    "nodeType": "room",
+    "coordinates": { "x": 120.0, "y": 1020.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_NORTH", "distance": 120.0 }]
+  },
+  {
+    "nodeId": "PSYCHOLOGY_SOCIAL_SCI",
+    "name": "Psychology & Social Science Block",
+    "nodeType": "room",
+    "coordinates": { "x": -150.0, "y": 1100.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_NORTH", "distance": 150.0 }]
+  },
+  {
+    "nodeId": "LAW_DEPT",
+    "name": "Department of Law",
+    "nodeType": "room",
+    "coordinates": { "x": 180.0, "y": 1150.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_NORTH", "distance": 180.0 }]
+  },
+  {
+    "nodeId": "SPORTS_HOSTEL_LINK",
+    "name": "Hostel & Sports Complex Road",
+    "nodeType": "hallway",
+    "coordinates": { "x": 400.0, "y": 1000.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_NORTH", "distance": 300.0 },
+      { "nodeId": "BU_CRICKET_STADIUM", "distance": 400.0 },
+      { "nodeId": "GIRLS_HOSTEL_CLUSTER", "distance": 200.0 },
+      { "nodeId": "BOYS_HOSTEL_CLUSTER", "distance": 250.0 }
+    ]
+  },
+  {
+    "nodeId": "BU_CRICKET_STADIUM",
+    "name": "Barkatullah University Stadium",
+    "nodeType": "room",
+    "coordinates": { "x": 800.0, "y": 1000.0, "floor": 1 },
+    "connections": [{ "nodeId": "SPORTS_HOSTEL_LINK", "distance": 400.0 }]
+  },
+  {
+    "nodeId": "GIRLS_HOSTEL_CLUSTER",
+    "name": "Girls Hostels (Samta/Jhalkari Bai)",
+    "nodeType": "room",
+    "coordinates": { "x": 400.0, "y": 1200.0, "floor": 1 },
+    "connections": [{ "nodeId": "SPORTS_HOSTEL_LINK", "distance": 200.0 }]
+  },
+  {
+    "nodeId": "BOYS_HOSTEL_CLUSTER",
+    "name": "Boys Hostels (Lord Buddha/Munshi Premchand)",
+    "nodeType": "room",
+    "coordinates": { "x": 650.0, "y": 1200.0, "floor": 1 },
+    "connections": [{ "nodeId": "SPORTS_HOSTEL_LINK", "distance": 250.0 }]
+  }
+
+
+  ,
+  {
+    "nodeId": "BU_MAIN_GATE",
+    "name": "BU Main Gate (Hoshangabad Rd)",
+    "nodeType": "entrance",
+    "coordinates": { "x": 0.0, "y": 0.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_S", "distance": 100.0 }
+    ]
+  },
+  {
+    "nodeId": "MAIN_SPINE_ROAD_S",
+    "name": "Main Road (South)",
+    "nodeType": "hallway",
+    "coordinates": { "x": 0.0, "y": 100.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "BU_MAIN_GATE", "distance": 100.0 },
+      { "nodeId": "SPORTS_GROUND_ENTRY", "distance": 120.0 },
+      { "nodeId": "ADMIN_BLOCK_RAJA_BHOJ", "distance": 80.0 },
+      { "nodeId": "MAIN_SPINE_ROAD_C", "distance": 200.0 }
+    ]
+  },
+  {
+    "nodeId": "SPORTS_GROUND_ENTRY",
+    "name": "Sports Complex & Stadium Area",
+    "nodeType": "room",
+    "coordinates": { "x": -150.0, "y": 150.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_S", "distance": 120.0 }]
+  },
+  {
+    "nodeId": "ADMIN_BLOCK_RAJA_BHOJ",
+    "name": "Admin Building (Raja Bhoj Bhavan)",
+    "nodeType": "room",
+    "coordinates": { "x": 80.0, "y": 120.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_S", "distance": 80.0 }]
+  },
+  {
+    "nodeId": "MAIN_SPINE_ROAD_C",
+    "name": "Central Hub (Library/IMS)",
+    "nodeType": "hallway",
+    "coordinates": { "x": 0.0, "y": 300.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_S", "distance": 200.0 },
+      { "nodeId": "CENTRAL_LIBRARY", "distance": 50.0 },
+      { "nodeId": "IMS_MANAGEMENT_DEPT", "distance": 100.0 },
+      { "nodeId": "UIT_CAMPUS_ENTRY", "distance": 150.0 },
+      { "nodeId": "MAIN_SPINE_ROAD_N", "distance": 350.0 }
+    ]
+  },
+  {
+    "nodeId": "CENTRAL_LIBRARY",
+    "name": "BU Central Library",
+    "nodeType": "room",
+    "coordinates": { "x": 50.0, "y": 300.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_C", "distance": 50.0 }]
+  },
+  {
+    "nodeId": "IMS_MANAGEMENT_DEPT",
+    "name": "IMS & CRIM Management Block",
+    "nodeType": "room",
+    "coordinates": { "x": -100.0, "y": 320.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_C", "distance": 100.0 }]
+  },
+  {
+    "nodeId": "UIT_CAMPUS_ENTRY",
+    "name": "UIT Engineering College Entry",
+    "nodeType": "hallway",
+    "coordinates": { "x": -150.0, "y": 450.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_C", "distance": 150.0 },
+      { "nodeId": "A_GF_ENTRANCE", "distance": 40.0 },
+      { "nodeId": "B_GF_ENTRANCE", "distance": 130.0 }
+    ]
+  },
+  {
+    "nodeId": "A_GF_ENTRANCE",
+    "name": "Phase 1 - Block A Entrance",
+    "nodeType": "entrance",
+    "coordinates": { "x": -200.0, "y": 450.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "UIT_CAMPUS_ENTRY", "distance": 40.0 },
+      { "nodeId": "A_GF_HALL_SOUTH", "distance": 10.0 }
+    ]
+  },
+  {
+    "nodeId": "B_GF_ENTRANCE",
+    "name": "Phase 2 - Block B Entrance",
+    "nodeType": "entrance",
+    "coordinates": { "x": -280.0, "y": 450.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "UIT_CAMPUS_ENTRY", "distance": 130.0 },
+      { "nodeId": "B_GF_HALL_SOUTH", "distance": 10.0 }
+    ]
+  },
+  {
+    "nodeId": "MAIN_SPINE_ROAD_N",
+    "name": "Academic Departments North",
+    "nodeType": "hallway",
+    "coordinates": { "x": 0.0, "y": 650.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_C", "distance": 350.0 },
+      { "nodeId": "DEPT_PHY_GEO", "distance": 80.0 },
+      { "nodeId": "DEPT_CS_LIFE_SCI", "distance": 120.0 },
+      { "nodeId": "PHARMACY_DEPT", "distance": 150.0 },
+      { "nodeId": "LAW_PSYCHOLOGY_ZONE", "distance": 200.0 },
+      { "nodeId": "HOSTEL_ZONE_PATH", "distance": 300.0 }
+    ]
+  },
+  {
+    "nodeId": "DEPT_PHY_GEO",
+    "name": "Physics & Geology Dept",
+    "nodeType": "room",
+    "coordinates": { "x": 80.0, "y": 650.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_N", "distance": 80.0 }]
+  },
+  {
+    "nodeId": "DEPT_CS_LIFE_SCI",
+    "name": "Computer Science & Life Science Dept",
+    "nodeType": "room",
+    "coordinates": { "x": -120.0, "y": 680.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_N", "distance": 120.0 }]
+  },
+  {
+    "nodeId": "PHARMACY_DEPT",
+    "name": "Department of Pharmacy",
+    "nodeType": "room",
+    "coordinates": { "x": 150.0, "y": 700.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_N", "distance": 150.0 }]
+  },
+  {
+    "nodeId": "LAW_PSYCHOLOGY_ZONE",
+    "name": "Law, Psychology & Humanities",
+    "nodeType": "room",
+    "coordinates": { "x": -200.0, "y": 750.0, "floor": 1 },
+    "connections": [{ "nodeId": "MAIN_SPINE_ROAD_N", "distance": 200.0 }]
+  },
+  {
+    "nodeId": "HOSTEL_ZONE_PATH",
+    "name": "North Hostel & Stadium Link",
+    "nodeType": "hallway",
+    "coordinates": { "x": 200.0, "y": 950.0, "floor": 1 },
+    "connections": [
+      { "nodeId": "MAIN_SPINE_ROAD_N", "distance": 300.0 },
+      { "nodeId": "BOYS_HOSTEL_BLOCK", "distance": 100.0 },
+      { "nodeId": "GIRLS_HOSTEL_BLOCK", "distance": 120.0 },
+      { "nodeId": "YOGA_POND_AREA", "distance": 250.0 }
+    ]
+  },
+  {
+    "nodeId": "BOYS_HOSTEL_BLOCK",
+    "name": "Boys Hostels (Munshi Premchand/Buddha)",
+    "nodeType": "room",
+    "coordinates": { "x": 300.0, "y": 950.0, "floor": 1 },
+    "connections": [{ "nodeId": "HOSTEL_ZONE_PATH", "distance": 100.0 }]
+  },
+  {
+    "nodeId": "GIRLS_HOSTEL_BLOCK",
+    "name": "Girls Hostels (Samta/Jhalkaribai)",
+    "nodeType": "room",
+    "coordinates": { "x": 200.0, "y": 1070.0, "floor": 1 },
+    "connections": [{ "nodeId": "HOSTEL_ZONE_PATH", "distance": 120.0 }]
+  },
+  {
+    "nodeId": "YOGA_POND_AREA",
+    "name": "Yoga Dept & Campus Pond",
+    "nodeType": "room",
+    "coordinates": { "x": 450.0, "y": 950.0, "floor": 1 },
+    "connections": [{ "nodeId": "HOSTEL_ZONE_PATH", "distance": 250.0 }]
+  }
+
 ]
