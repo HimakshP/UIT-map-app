@@ -2,44 +2,20 @@ use crate::models::{CampusNode, Connection, Coordinates};
 use petgraph::algo::astar;
 use petgraph::graph::{NodeIndex, UnGraph};
 use std::collections::HashMap;
+use std::fs::File;
+use std::io::BufReader;
 
 pub struct CampusMap {
     graf: UnGraph<CampusNode, f32>,
     index_map: HashMap<String, NodeIndex>,
 }
 
-pub fn create_mock_data() -> Vec<CampusNode> {
-    let node1 = CampusNode {
-        node_id: "A".to_string(),
-        name: "Main Gate".to_string(),
-        node_type: "entrance".to_string(),
-        coordinates: Coordinates {
-            x: 0.0,
-            y: 0.0,
-            floor: "1".to_string(),
-        },
-        connections: vec![Connection {
-            node_id: "B".to_string(),
-            distance: 10.0,
-        }],
-    };
-
-    let node2 = CampusNode {
-        node_id: "B".to_string(),
-        name: "Library".to_string(),
-        node_type: "building".to_string(),
-        coordinates: Coordinates {
-            x: 10.0,
-            y: 0.0,
-            floor: "1".to_string(),
-        },
-        connections: vec![Connection {
-            node_id: "A".to_string(),
-            distance: 10.0,
-        }],
-    };
-
-    vec![node1, node2]
+pub fn load_data_from_file(path: &str) -> Vec<CampusNode> {
+    let file = File::open(path).expect("Failed to open campus.json");
+    let reader = BufReader::new(file);
+    let nodes: Vec<CampusNode> = serde_json::from_reader(reader)
+        .expect("Failed to parse JSON. Check your commas and brackets!");
+    nodes
 }
 
 // pub fn build() {

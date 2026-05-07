@@ -1,23 +1,30 @@
-mod models;
 mod graph_utils;
+mod models;
+mod routes;
 
-use graph_utils::{create_mock_data, build};
+use graph_utils::{CampusMap, load_data_from_file};
+use std::net::SocketAddr;
+use std::sync::Arc;
 
+use crate::graph_utils::build;
+use crate::routes::create_router;
 
-fn main() {
-    
-    let data = create_mock_data();
+#[tokio::main]
+async fn main() {
+    // 1. Initialize the "Brain"
+    let raw_data = load_data_from_file("data/campus_data.json");
+    let map = build(raw_data);
 
-    let campus_map = build(data);
-    
-    println!("Searching for path from A to B...");
-    
-    if let Some(path) = campus_map.find_path("A".to_string(), "B".to_string()) {
-        println!("Path found! Steps:");
-        for node in path {
-            println!(" -> {} (at {}, {})", node.name, node.coordinates.x, node.coordinates.y);
-        }
-    } else {
-        println!("No path found. Check your IDs!");
-    }
+    // 2. Wrap in Arc so multiple web requests can read it safely at once
+    let shared_state = Arc::new(map);
+
+    // 3. Build the router (defined in routes.rs)
+    let app = create_router(shared_state);
+
+    // 4. Start the server
+    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    println!("Campus Navigation Server running on http://{}", addr);
+
+    let listener = tokio::net::TcpListener::bind(addr).await.unwrap();
+    axum::serve(listener, app).await.unwrap();
 }

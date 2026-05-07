@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 pub struct Coordinates {
     pub(crate) x: f32,
     pub(crate) y: f32,
-    pub(crate) floor: String,
+    pub(crate) floor: i32,
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -20,7 +20,7 @@ pub struct Connection {
 pub struct CampusNode {
     pub(crate) node_id: String,
     pub(crate) name: String,
-    #[serde(rename = "type")]
+    
     pub(crate) node_type: String,
     pub(crate) connections: Vec<Connection>,
     pub(crate) coordinates: Coordinates,

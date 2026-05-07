@@ -1,0 +1,31 @@
+[
+  {
+    "node_id": "bldg1_f1_entrance",
+    "name": "Building 1 Main Entrance",
+    "node_type": "entrance",
+    "coordinates": { "x": 100.0, "y": 100.0, "floor": 1 },
+    "connections": [
+      { "node_id": "bldg1_f1_stairs", "distance": 15.0 },
+      { "node_id": "outside_quad", "distance": 20.0 }
+    ]
+  },
+  {
+    "node_id": "bldg1_f1_stairs",
+    "name": "Building 1 Stairs (Lobby)",
+    "node_type": "stairs",
+    "coordinates": { "x": 115.0, "y": 100.0, "floor": 1 },
+    "connections": [
+      { "node_id": "bldg1_f2_stairs", "distance": 50.0 } 
+    ]
+  },
+  {
+    "node_id": "bldg1_f2_stairs",
+    "name": "Building 1 Stairs (Floor 2)",
+    "node_type": "stairs",
+    "coordinates": { "x": 115.0, "y": 100.0, "floor": 2 },
+    "connections": [
+      { "node_id": "bldg1_f1_stairs", "distance": 50.0 },
+      { "node_id": "room_201", "distance": 10.0 }
+    ]
+  }
+]
