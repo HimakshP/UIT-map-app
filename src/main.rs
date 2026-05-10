@@ -12,7 +12,7 @@ use crate::routes::create_router;
 #[tokio::main]
 async fn main() {
     // 1. Initialize the "Brain"
-    let raw_data = load_data_from_file("data/campus_data.json");
+    let raw_data = load_data_from_file("data/campus.json");
     let map = build(raw_data);
 
     // 2. Wrap in Arc so multiple web requests can read it safely at once
