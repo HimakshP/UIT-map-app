@@ -1,5 +1,5 @@
 /target
 /node_modules
-frontend/target
-backend/target
+/frontend/target
+/backend/target
 /.idea
