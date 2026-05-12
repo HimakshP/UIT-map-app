@@ -144,7 +144,7 @@ pub fn App() -> impl IntoView {
                     <div class="map-wrapper">
 
                         <img
-                            src="/assets/maps/bu-nav-map.svg"
+                            src="/assets/maps/b.svg"
                             class="map-svg"
                         />
 
