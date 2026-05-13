@@ -1,0 +1,11 @@
+/home/himax/code/campus-map/frontend/target/debug/deps/leptos_server-f9fb79f6add4c1fa.d: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/action.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/local_resource.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/multi_action.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/once_resource.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/resource.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/shared.rs
+
+/home/himax/code/campus-map/frontend/target/debug/deps/libleptos_server-f9fb79f6add4c1fa.rmeta: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/action.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/local_resource.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/multi_action.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/once_resource.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/resource.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/shared.rs
+
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/lib.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/action.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/local_resource.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/multi_action.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/once_resource.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/resource.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/leptos_server-0.8.7/src/shared.rs:

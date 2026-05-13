@@ -2,9 +2,7 @@ mod graph_utils;
 mod models;
 mod routes;
 
-use tower_http::cors::CorsLayer;
-
-use graph_utils::{CampusMap, load_data_from_file};
+use graph_utils::{load_data_from_file};
 use std::net::SocketAddr;
 use std::sync::Arc;
 

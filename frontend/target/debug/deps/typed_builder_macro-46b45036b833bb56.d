@@ -1,0 +1,10 @@
+/home/himax/code/campus-map/frontend/target/debug/deps/typed_builder_macro-46b45036b833bb56.d: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/builder_attr.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/field_info.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/mutator.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/struct_info.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/util.rs
+
+/home/himax/code/campus-map/frontend/target/debug/deps/libtyped_builder_macro-46b45036b833bb56.so: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/builder_attr.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/field_info.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/mutator.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/struct_info.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/util.rs
+
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/lib.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/builder_attr.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/field_info.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/mutator.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/struct_info.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typed-builder-macro-0.23.2/src/util.rs:

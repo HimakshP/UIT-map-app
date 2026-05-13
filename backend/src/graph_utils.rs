@@ -1,4 +1,4 @@
-use crate::models::{CampusNode, Connection, Coordinates};
+use crate::models::{CampusNode};
 use petgraph::algo::astar;
 use petgraph::graph::{NodeIndex, UnGraph};
 use std::collections::HashMap;
@@ -17,34 +17,6 @@ pub fn load_data_from_file(path: &str) -> Vec<CampusNode> {
         .expect("Failed to parse JSON. Check your commas and brackets!");
     nodes
 }
-
-// pub fn build() {
-//     let mut g = CampusMap {
-//         graf: UnGraph::new_undirected(),
-//         index_map: HashMap::new(),
-//     };
-
-//     for _node_index in g.graf.node_indices() {
-//         g.graf.add_node(CampusNode {
-//             node_id: Connection {
-//                 node_id: "hi".to_string(),
-//                 distance: 1.0,
-//             },
-//             name: "String".to_string(),
-//             node_type: "String".to_string(),
-//             connections: [].to_vec(),
-//             coordinates: Coordinates {
-//                 x: 7.0,
-//                 y: 7.0,
-//                 floor: "1".to_string(),
-//             },
-//         });
-//     }
-
-//     for node_index in g.index_map{
-
-//     }
-// }
 
 pub fn build(nodes: Vec<CampusNode>) -> CampusMap {
     let mut graf = UnGraph::<CampusNode, f32>::new_undirected();

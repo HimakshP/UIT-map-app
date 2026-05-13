@@ -1,0 +1,1 @@
+/home/himax/code/campus-map/frontend/target/wasm32-unknown-unknown/debug/campus-map.wasm: /home/himax/code/campus-map/frontend/src/app/mod.rs /home/himax/code/campus-map/frontend/src/app/page.rs /home/himax/code/campus-map/frontend/src/main.rs

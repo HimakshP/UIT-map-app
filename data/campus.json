@@ -499,14 +499,14 @@
     "coordinates": { "x": 0.0, "y": 300.0, "floor": 1 },
     "connections": [
       { "nodeId": "GATE_AVENUE_HUB", "distance": 200.0 },
-      { "nodeId": "RAJA_BHOJ_ADMIN", "distance": 70.0 },
+      { "nodeId": "ADMIN_BLOCK", "distance": 70.0 },
       { "nodeId": "IMS_MANAGEMENT_BLOCK", "distance": 150.0 },
       { "nodeId": "MAIN_SPINE_ROAD_CENTRAL", "distance": 300.0 }
     ]
   },
   {
-    "nodeId": "RAJA_BHOJ_ADMIN",
-    "name": "Administrative Block (Raja Bhoj Bhavan)",
+    "nodeId": "ADMIN_BLOCK",
+    "name": "Administrative Block",
     "nodeType": "room",
     "coordinates": { "x": -70.0, "y": 300.0, "floor": 1 },
     "connections": [{ "nodeId": "MAIN_SPINE_ROAD_SOUTH", "distance": 70.0 }]

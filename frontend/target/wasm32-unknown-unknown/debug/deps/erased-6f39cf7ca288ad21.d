@@ -1,0 +1,11 @@
+/home/himax/code/campus-map/frontend/target/wasm32-unknown-unknown/debug/deps/erased-6f39cf7ca288ad21.d: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_box.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_mut_ref.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_ref.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/../README.md
+
+/home/himax/code/campus-map/frontend/target/wasm32-unknown-unknown/debug/deps/liberased-6f39cf7ca288ad21.rlib: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_box.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_mut_ref.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_ref.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/../README.md
+
+/home/himax/code/campus-map/frontend/target/wasm32-unknown-unknown/debug/deps/liberased-6f39cf7ca288ad21.rmeta: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_box.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_mut_ref.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_ref.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/../README.md
+
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/lib.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_box.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_mut_ref.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/erased_ref.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/erased-0.1.2/src/../README.md:

@@ -1,5 +1,13 @@
 /target
+Cargo.lock
+/dist
 /node_modules
-/frontend/target
-/backend/target
-/.idea
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.local
+*.tmp
+*.temp

@@ -1,0 +1,11 @@
+/home/himax/code/campus-map/frontend/target/debug/deps/convert_case-abd450d0ac3d2400.d: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/boundary.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/case.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/converter.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/pattern.rs
+
+/home/himax/code/campus-map/frontend/target/debug/deps/libconvert_case-abd450d0ac3d2400.rlib: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/boundary.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/case.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/converter.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/pattern.rs
+
+/home/himax/code/campus-map/frontend/target/debug/deps/libconvert_case-abd450d0ac3d2400.rmeta: /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/lib.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/boundary.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/case.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/converter.rs /home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/pattern.rs
+
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/lib.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/boundary.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/case.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/converter.rs:
+/home/himax/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.11.0/src/pattern.rs:
