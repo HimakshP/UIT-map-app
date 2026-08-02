@@ -1,6 +1,6 @@
 target/
-backend/target
-frontend/target
+backend/target/
+frontend/target/
 Cargo.lock
 dist/
 /node_modules
